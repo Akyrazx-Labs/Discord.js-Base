@@ -1,6 +1,4 @@
 import { readdir } from 'node:fs/promises';
-import { join } from 'node:path';
-import { pathToFileURL } from 'node:url';
 
 export default async function loadCommands(client) {
     const commandsPath = new URL('../commands/prefix/', import.meta.url);
